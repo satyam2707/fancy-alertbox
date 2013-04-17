@@ -1,0 +1,34 @@
+body{margin:0px; background-color:cream;}
+.close{ float: right;margin: -14px -12px 0 0; cursor: pointer;}
+.outerWrapper{margin: 50px;}
+.outerWrapper h1{font-size: 20px;}
+.outerWrapper p{ font-size:16px;
+    line-height: 1.5;
+    margin: 5px 0;
+    width: 50%;}
+.wrapper{float: left;width: 100%; margin: 10px 0 10px 0;}
+.wrapper p{float: left; font-size: 14px;width: 100%;}
+.wrapper h3{float: left; font-size: 16px; text-decoration: underline;width: 100%;}
+.wrapper h4{float: left; font-size: 14px;width: 100%;}
+
+.alertbox{background-color: #000000;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			    
+}
+.popuparea{
+		width: 439px;
+		position: absolute;
+		z-index: 105;
+		background: none repeat scroll 0% 0% rgb(249, 249, 249);
+		border: 5px solid black;
+		padding: 0px 0px 15px;
+		border-radius: 10px 10px 10px 10px;
+                left: 50%;
+		top: 50%;
+}
+.innercontainer{padding: 5px 10px 10px 5px;}
+.innercontainer dl dd{text-align: center; font-size: 18px; font-weight: bold;}
+.innercontainer dl dt{text-align: justify; font-size: 16px;line-height: normal; word-wrap: break-word;}
+			

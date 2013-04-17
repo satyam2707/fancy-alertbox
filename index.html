@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Static Content Example</title>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/alertbox.js"  type="text/javascript"></script>
+<link href="css/style.css" rel="stylesheet"> 
+<script>
+
+$(document).ready(function()
+{
+	/* only for demo2*/
+	$('#ajaxalert').alerbox({
+			       url :'ajaxContent.html'
+	                    });
+	/* only for demo1*/
+	$('#alert').alerbox({
+			       div :'#container'
+	                    });
+	/* only for close functionality*/
+	$('#alertclose').alerbox({
+			       div :'#container'
+	                    });
+	
+	
+    
+});
+
+</script>
+</head>
+
+<body>
+
+<div class="outerWrapper">
+   <h1>Welcome to jQuery Fancy Alertbox!!</h1>
+   <p>This page demonstrates that how to use this plugin.It can be used in two ways.
+   <ul>
+      <li>Show static div in a alertbox</li>
+      <li>Show dynamic div in a alertbox (Using AJAX)</li>
+  </ul></p>
+<div class="wrapper">
+   <h3>Show static div in a alertbox</h3>
+   <p>Use the below code to open a div in alert box:<br>
+       $('#alert').alerbox({ div :'#container'});
+			      
+	                    
+			    
+   </p>
+   <h4>Demo 1:</h4>
+   <input type="button" id="alert" value="Show Static Content in Alertbox"/>
+</div>
+<div class="wrapper">
+    <h3>Show dynamic div in a alertbox (Using AJAX)</h3>
+    <p>Use the below code to open a div in alert box:<br>
+      $('#ajaxalert').alerbox({
+			       url :'ajaxContent.html'
+	                    });
+			      
+	                    
+			    
+   </p>
+     <h4>Demo 2:</h4>
+<input type="button" id="ajaxalert" value="Show Ajax Content in Alertbox"/>
+</div>
+<!-- Static content-->
+<div class="wrapper">
+    <h3>How to Close an AlertBox</h3>
+    <p> Use the following code to bind an click event on a elements click.<br> <b>{input type="button" onclick="$(this).alerbox('close')"}</b>                  
+			    
+   </p><!--h3>Demo 3:</h3>
+     <input type="button" id="alertclose" value="View close example"/-->
+</div>
+
+<div style="width:500px; display:none;" id="container">
+   <div class="innercontainer">
+   <dl>
+      <dd>Static Content Example</dd>
+   </dl>
+    <dl>
+      <dt>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</dt>
+   </dl>
+    <dl>
+      <dd><input type="button" id="closealert" value="Close" onclick="$(this).alerbox('close');"/>
+</dd>
+   </dl>
+   </div>
+</div>
+</body>
+</html>
