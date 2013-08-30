@@ -1,0 +1,1 @@
+SELECT checkin_id,target_type,tagged_uids,coords,target_id FROM checkin WHERE  author_uid in(SELECT uid2 from friend  where uid1=me()) and target_type = 'page'
